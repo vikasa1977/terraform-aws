@@ -5,10 +5,16 @@ terraform {
       version = "3.66.0"
     }
   }
+  backend "remote" {
+    organization = "vikasawate"
+    workspaces {
+      name = "vikasawate"
+    }
 }
-
+}
 provider "aws" {
   region = "us-west-2"
+  
 }
 
 resource "aws_vpc" "main" {

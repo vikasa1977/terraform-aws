@@ -15,6 +15,7 @@ variable "availability_zones" {
 
 variable "workstation_ip" {
   type = string
+  default = "52.6.91.199/32"
 }
 
 variable "amis" {
